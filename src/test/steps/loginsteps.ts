@@ -17,7 +17,7 @@ When('I enter {string} and {string} credentials', async function (username: stri
     await page.fill('#password', password);
 });
 
-When('I click on the login button', async function () {
+When('I click on my login button', async function () {
     //await page.locator('[data-test="login-button"]').click();
       await page.click('#login-button');
 });
