@@ -1,7 +1,8 @@
-import { Given, When, Then } from '@cucumber/cucumber';
+import { Given, When, Then, setDefaultTimeout  } from '@cucumber/cucumber';
 import { chromium, Browser, Page } from 'playwright';
 import { expect } from '@playwright/test';
-
+ // Increase timeout for Playwright operations
+setDefaultTimeout(60 * 1000); // 60 seconds
 let browser: Browser;
 let page: Page;
 
