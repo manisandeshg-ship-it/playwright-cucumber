@@ -1,5 +1,6 @@
 Feature: Login page validation
 
+   @login
   Scenario: Login with valid credentials
     Given I am on the login page
     When I enter "standard_user" and "secret_sauce" credentials

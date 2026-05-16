@@ -5,7 +5,7 @@ import { expect } from '@playwright/test';
 let browser: Browser;
 let page: Page;
 
-Given('I am on the login page', async () => {
+Given('I am on the login page',  async () => {
     browser = await chromium.launch({ headless: false });
     const context = await browser.newContext();
     page = await context.newPage();
